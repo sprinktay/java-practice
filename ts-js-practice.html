@@ -41,7 +41,6 @@
 // strings on my own
   console.log('hi hello hey! my name is ' + name);
 
-
   // part 2. functions
   console.log('using functions');
   // this is a function to make squares
@@ -56,5 +55,20 @@
   let tryFail3 = makeSquare(7);
   console.log(tryFail3);
   console.log(makeSquare(4));
+
+  function myName(first, middle, last) {
+    let nameParts = first + " " + middle + " " + last;
+    return nameParts;
+  }
+    let fullName1 = myName("Taylor","P", "Sprinkle");
+    console.log(fullName1);
+    let fullName2 = myName("Robert", '"Beto"', "O'Rourke");
+    console.log(fullName2);
+    let fullName3 = myName("Jesse","R", "Sprinkle");
+    console.log(fullName3);
+    console.log(fullName3.length);
+    let fullNameReturn = myName("Arielle", "T", "Sprinkle");
+    console.log(fullNameReturn.toUpperCase());
+
 
   </script>
