@@ -57,16 +57,14 @@
   console.log(makeSquare(4));
 
   function myName(first, middle, last) {
-    let nameParts = first + " " + middle + " " + last;
-    return nameParts;
+    let fullName = first + " " + middle + " " + last;
+    return fullName;
   }
-    let fullName1 = myName("Taylor","P", "Sprinkle");
-    console.log(fullName1);
-    let fullName2 = myName("Robert", '"Beto"', "O'Rourke");
-    console.log(fullName2);
-    let fullName3 = myName("Jesse","R", "Sprinkle");
-    console.log(fullName3);
-    console.log(fullName3.length);
+    console.log(myName("Taylor","P", "Sprinkle"));
+    console.log(myName("Robert", '"Beto"', "O'Rourke"));
+    console.log(myName("Jesse","R", "Sprinkle"));
+    let fullName = myName("Jesse","R", "Sprinkle");
+    console.log(fullName.length);
     let fullNameReturn = myName("Arielle", "T", "Sprinkle");
     console.log(fullNameReturn.toUpperCase());
 
