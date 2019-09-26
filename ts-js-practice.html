@@ -34,10 +34,10 @@
   console.log(cheeseKeys);
 
   //console.log('Working wiht Strings');
-  let firstName = 'taylor';
+  /*let firstName = 'taylor';
   let middleName = 'p';
   let lastName = 'sprinkle'
-  let name = firstName + " " + middleName + " " + lastName;
+  let name = firstName + " " + middleName + " " + lastName;*/
 // strings on my own
   console.log('hi hello hey! my name is ' + name);
 
@@ -68,5 +68,37 @@
     let fullNameReturn = myName("Arielle", "T", "Sprinkle");
     console.log(fullNameReturn.toUpperCase());
 
+    console.log("Make better name.");
+    function makeBetterName(firstName, middleName, lastName) {
+      if (middleName.length === 1) {
+        //update added heres
+        middleName = middleName + ".";
+        let full1Name = firstName + " " + middleName + " " + lastName;
+        return full1Name; 
+      } else {
+        //update here
+        let full1Name = firstName + " " + middleName + " " + lastName;
+        return full1Name;
+      }
+    }
+    console.log(makeBetterName("Taylor", "name", "Sprinkle"));
+    console.log(makeBetterName("Taylor", "P", "Sprinkle"));
 
+    function score(home, away) {
+      if (home > away) {
+        let win = "The home team won";
+        return win;
+      } else if (away > home) {
+        let loss = "The home team lost";
+        return loss;
+      } else {
+        let tie = "There was a tie";
+        return tie;
+      }
+    }
+    console.log(score(4, 6));
+    console.log(score(9,9));
+    console.log(score (7, 9));
+    
+    
   </script>
